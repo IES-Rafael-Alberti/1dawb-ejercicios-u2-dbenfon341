@@ -4,7 +4,19 @@
 # Si el cliente es menor de 4 años puede entrar gratis, si tiene entre 4 y 18 años debe pagar 5€ y si es mayor de 18 años, 10€.
 
 
+def compruebaEdad(edad):
+    if edad <= 4:
+        return "¡Entras gratis!"
+    elif edad in range(4, 18):
+        return "5 €"
+    else:
+        return "10 €"
+
+
 def main():
+    edad = int(input("¿Qué edad tienes?: "))
+    precioEntrada = compruebaEdad(edad)
+    print (f"El coste de tu entrada es: {precioEntrada}")
     return
 
 if __name__ == "__main__":
