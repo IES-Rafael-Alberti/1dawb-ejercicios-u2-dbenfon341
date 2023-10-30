@@ -4,28 +4,24 @@
 # Escribir un programa que pregunte al usuario su nombre y sexo, y muestre por pantalla el grupo que le corresponde.
 
 
-def pedirNombre(nombre):
-    nombre = ""
-    if nombre.startswith(('A','B','C','D','E','F','G','H','I','J','K','L','M')):
-        return True
-    elif nombre.startswith(('N','O','P','Q','R','S','T','U','V','W','X','Y','Z')):
-        return False
-
-
-def pedirGenero(sexo):
-    if sexo == "hombre":
-        return sexo == int(1)
-    elif sexo == "mujer":
-        return sexo == int(2)
-
+def comprobarGrupos(nombre, genero):
+    if genero == 'F' and nombre < 'M' or genero == 'M' and nombre > 'N':
+        return "A"
+    else:
+        return "B"
 
 
 def main():
-    grupogenero = pedirGenero(int(input("Introduce tu género: ")))
-    if grupogenero == (1):
-        print("AAAA")
+    nombre = input(f"Introduce tu nombre: ").upper()
+    genero = input(f"Introduce tu género (F/M): ").upper()
+
+    grupo = comprobarGrupos(nombre, genero)
+
+    if genero == 'F' or genero == 'M':
+        print(f"Perteneces al grupo: {grupo}")
     else:
-        print("BBBB")
+        print(f"Introduce un género correcto.")
 
 
-main()
+if __name__ == "__main__":
+    main()

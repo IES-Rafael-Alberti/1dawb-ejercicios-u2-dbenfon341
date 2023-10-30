@@ -3,3 +3,8 @@
 # Precondición: se tomará como separador de palabras al carácter “ “ (espacio), ya sea uno o más.
 
 
+def main():
+    return
+
+if __name__ == "__main__":
+    main()

@@ -2,13 +2,17 @@
 # Escribir un programa que pida al usuario un número entero y muestre por pantalla si es par o impar.
 
 
-def ejercicio():
-    num1 = int(input("Introduce un número: "))
+def numerit(num1):
     if num1 % 2 == 0:
-        print("El número es par.")
+        return print(f"El número es par.")
     else:
-        print("El número es impar.")
-    return
+        return print(f"El número es impar.")
 
 
-ejercicio()
+def main():
+    numero = int(input(f"Introduce un número: "))
+    numerit(numero)
+
+
+if __name__ == "__main__":
+    main()

@@ -3,12 +3,29 @@
 # Escribir un programa que pregunte al usuario su edad y sus ingresos 
 # mensuales y muestre por pantalla si el usuario tiene que tributar o no.
 
-
-def ejercicio(edad, ingresos):
-    if edad < 16 or ingresos < 1000:
-        print ("No tienes que tributar.")
+def es_ingreso_suficiente(ingreso):
+    if ingreso < 1000:
+        return False
     else:
-        return print ("Tienes que tributar.")
+        return True
     
+
+def es_mayor_de_edad(edad):
+    if edad >= 16:
+        return True
+    else:
+        return False
     
-ejercicio(int(input("Introduce tu edad: ")), int(input("Introduce tus ingresos mensuales: ")))
+
+def main():
+    ingresos = int(input(f"Introduce tus ingresos: "))
+    edad_persona = int(input(f"Introduce tu edad: "))
+    
+    if es_ingreso_suficiente(ingresos) and es_mayor_de_edad(edad_persona):
+        print(f"Tributas.")
+    else:
+        print(f"No tributas.")
+
+
+if __name__ == "__main__":
+    main()

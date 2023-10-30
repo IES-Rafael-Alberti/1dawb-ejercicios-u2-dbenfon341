@@ -3,16 +3,19 @@
 # introducida por el usuario coincide con la guardada en la variable sin tener en cuenta mayúsculas y minúsculas.
 
 
+def comprobarPwd(pwd):
+    if pwd == "contraseña":
+        return print(f"¡Has acertado la contraseña!")
+    else:
+        return print(f"No has acertado.")
 
 
-
-def password():
-    return input("Introduce una contraseña: ")
-
-
-def palabrasecreta():
-    
+def main():
+    pwd = input(f"Por favor, introduce la contraseña: ")
+    pwd = pwd.lower()
+    resultado = comprobarPwd(pwd)
+    print(resultado)
 
 
-
-
+if __name__ == "__main__":
+    main()

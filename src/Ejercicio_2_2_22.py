@@ -4,3 +4,8 @@
 #Al finalizar, informar la cantidad de dígitos pares y de dígitos impares leídos en total.
 
 
+def main():
+    return
+
+if __name__ == "__main__":
+    main()

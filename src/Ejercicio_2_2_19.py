@@ -5,3 +5,8 @@
 # Si elige las opciones 1 ó 2 se imprimirá un texto. Si elige la opción 3, se interrumpirá la impresión del menú y el programa finalizará.
 
 
+def main():
+    return
+
+if __name__ == "__main__":
+    main()

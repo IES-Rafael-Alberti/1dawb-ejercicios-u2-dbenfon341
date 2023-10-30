@@ -2,14 +2,19 @@
 # Escribir un programa que pida al usuario dos números y muestre por pantalla su división. Si el divisor es cero el programa debe mostrar un error.
 
 
-def ejercicio():
-    num1 = int(input("Introduce un número: "))
-    num2 = int(input("Introduce otro número: "))
+def numeritosDivision(num1, num2):
     if num2 == 0:
-        print("El divusir no puede ser 0.")
-    else:
-        print(f"La división es: {num1/num2}.")
-    return
+        return print(f"El divisor no debe ser cero.")
+    else: 
+        return num1 / num2
 
 
-ejercicio()
+def main():
+    num1 = int(input(f"Introduce un número: "))
+    num2 = int(input(f"Introduce otro número: "))
+    resultado = numeritosDivision(num1, num2)
+    print (f"El resultado de la división es: {resultado}.")
+
+
+if __name__ == "__main__":
+    main()

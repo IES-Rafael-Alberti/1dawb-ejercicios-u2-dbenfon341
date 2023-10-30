@@ -1,4 +1,4 @@
-# Ejercicio 2.1.10¶
+# Ejercicio 2.1.10
 # La pizzería Bella Napoli ofrece pizzas vegetarianas y no vegetarianas a sus clientes. Los ingredientes para cada tipo de pizza aparecen a continuación.
 #
 # Ingredientes vegetarianos: Pimiento y tofu.
@@ -8,3 +8,8 @@
 # Al final se debe mostrar por pantalla si la pizza elegida es vegetariana o no y todos los ingredientes que lleva.
 
 
+def main():
+    return
+
+if __name__ == "__main__":
+    main()
