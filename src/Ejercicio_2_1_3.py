@@ -3,17 +3,17 @@
 
 
 def numeritosDivision(num1, num2):
-    if num2 == 0:
-        return print(f"El divisor no debe ser cero.")
-    else: 
         return num1 / num2
 
 
 def main():
     num1 = int(input(f"Introduce un número: "))
     num2 = int(input(f"Introduce otro número: "))
-    resultado = numeritosDivision(num1, num2)
-    print (f"El resultado de la división es: {resultado}.")
+    if num2 == 0:
+        print ("El divisor no puede ser 0.")
+    else:
+        resultado = numeritosDivision(num1, num2)
+        print (f"El resultado de la división es: {resultado}.")
 
 
 if __name__ == "__main__":

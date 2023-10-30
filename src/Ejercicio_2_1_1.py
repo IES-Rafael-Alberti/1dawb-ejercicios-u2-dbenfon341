@@ -1,8 +1,8 @@
 def comprobarEdad(edad):
     if edad >= 18:
-        return print (f"Eres mayor de edad.")
+        return "Eres mayor de edad."
     else:
-        return print (f"No eres mayor de edad.")
+        return "No eres mayor de edad."
 
 
 def main():

@@ -5,9 +5,9 @@
 
 def comprobarPwd(pwd):
     if pwd == "contraseña":
-        return print(f"¡Has acertado la contraseña!")
+        return "¡Has acertado la contraseña!"
     else:
-        return print(f"No has acertado.")
+        return "No has acertado."
 
 
 def main():
