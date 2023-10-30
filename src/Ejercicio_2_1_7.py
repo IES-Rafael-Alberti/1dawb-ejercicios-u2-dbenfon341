@@ -10,3 +10,8 @@
 # Escribir un programa que pregunte al usuario su renta anual y muestre por pantalla el tipo impositivo que le corresponde.
 
 
+def main():
+    return
+
+if __name__ == "__main__":
+    main()

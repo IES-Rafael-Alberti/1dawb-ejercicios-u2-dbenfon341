@@ -18,3 +18,8 @@
 # Fin. Se leyeron 2 líneas completas.
 
 
+def main():
+    return
+
+if __name__ == "__main__":
+    main()
