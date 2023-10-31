@@ -4,7 +4,7 @@
 # Escribir un programa que pregunte al usuario su nombre y sexo, y muestre por pantalla el grupo que le corresponde.
 
 
-def comprobarGrupos(nombre, genero):
+def comprobar_grupos(nombre, genero):
     if genero == 'F' and nombre < 'M' or genero == 'M' and nombre > 'N':
         return "A"
     else:
@@ -15,7 +15,7 @@ def main():
     nombre = input(f"Introduce tu nombre: ").upper()
     genero = input(f"Introduce tu género (F/M): ").upper()
 
-    grupo = comprobarGrupos(nombre, genero)
+    grupo = comprobar_grupos(nombre, genero)
 
     if genero == 'F' or genero == 'M':
         print(f"Perteneces al grupo: {grupo}")

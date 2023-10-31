@@ -10,7 +10,7 @@
 # Escribir un programa que pregunte al usuario su renta anual y muestre por pantalla el tipo impositivo que le corresponde.
 
 
-def tipoRenta(renta):
+def tipo_de_renta(renta):
     if renta < 10000:
         return "5"
     elif renta in range(10000, 20000):
@@ -24,8 +24,8 @@ def tipoRenta(renta):
     
 
 def main():
-    rentaAnual = int(input("Introduzca su renta anual: "))
-    total = tipoRenta(rentaAnual)
+    renta_anual = int(input("Introduzca su renta anual: "))
+    total = tipo_de_renta(renta_anual)
     print (f"Su renta anual es de {total}%.")
 
 

@@ -2,7 +2,7 @@
 # Escribir un programa que pida al usuario dos números y muestre por pantalla su división. Si el divisor es cero el programa debe mostrar un error.
 
 
-def numeritosDivision(num1, num2):
+def numeros_division(num1, num2):
         return num1 / num2
 
 
@@ -12,7 +12,7 @@ def main():
     if num2 == 0:
         print ("El divisor no puede ser 0.")
     else:
-        resultado = numeritosDivision(num1, num2)
+        resultado = numeros_division(num1, num2)
         print (f"El resultado de la división es: {resultado}.")
 
 

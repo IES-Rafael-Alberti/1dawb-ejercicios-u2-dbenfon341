@@ -1,4 +1,4 @@
-def comprobarEdad(edad):
+def comprobar_edad(edad):
     if edad >= 18:
         return "Eres mayor de edad."
     else:
@@ -7,7 +7,7 @@ def comprobarEdad(edad):
 
 def main():
     edad = int(input(f"Por favor, introduce tu edad: "))
-    resultado = comprobarEdad(edad)
+    resultado = comprobar_edad(edad)
     print(resultado)
 
 

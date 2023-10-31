@@ -10,7 +10,7 @@
 # Aceptable	0.4
 # Meritorio	0.6 o más
 #
-#Escribir un programa que lea la puntuación del usuario e indique su nivel de rendimiento, así como la cantidad de dinero que recibirá el usuario.
+# Escribir un programa que lea la puntuación del usuario e indique su nivel de rendimiento, así como la cantidad de dinero que recibirá el usuario.
 
 
 
