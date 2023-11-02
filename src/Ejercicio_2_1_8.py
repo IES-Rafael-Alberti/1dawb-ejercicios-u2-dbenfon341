@@ -13,21 +13,34 @@
 # Escribir un programa que lea la puntuación del usuario e indique su nivel de rendimiento, así como la cantidad de dinero que recibirá el usuario.
 
 
-
-
-
-
-
-
-
-
-
-
-
+def pedir_punto(punto):
+    if punto == 0.0 or punto == 0.4 or punto >= 0.6:
+        if punto == 0.0:
+            return "Inaceptable"
+        elif punto == 0.4:
+            return "Aceptable"
+        elif punto >= 0.6:
+            return "Meritorio"
+    else:
+        return False
 
 
 def main():
-    return
+    dinerousuario = float(input("Introduce la puntuación del usuario: "))
+    variablepunto = pedir_punto(dinerousuario)
+
+    if variablepunto == "Inaceptable":
+        dinerousuario = dinerousuario * 2400
+        print (f"El nivel del usuario es {variablepunto} y la cantidad de dinero recibida es de: {dinerousuario} €")
+    elif variablepunto == "Aceptable":
+        dinerousuario = dinerousuario * 2400
+        print (f"El nivel del usuario es {variablepunto} y la cantidad de dinero recibida es de: {dinerousuario} €")
+    elif variablepunto == "Meritorio":
+        dinerousuario = dinerousuario * 2400
+        print (f"El nivel del usuario es {variablepunto} y la cantidad de dinero recibida es de: {dinerousuario} €")
+    else:
+        print("Puntuación incorrecta.")
+
 
 if __name__ == "__main__":
     main()

@@ -19,5 +19,6 @@ def main():
     print (f"El coste de tu entrada es: {precio_entrada}")
     return
 
+
 if __name__ == "__main__":
     main()

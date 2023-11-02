@@ -8,8 +8,18 @@
 # *****
 
 
+def bucle_asterisco(num):
+    resultado = ""
+    for i in range(1, num + 1):
+        resultado = resultado + '\n' + '*' * i
+    return resultado
+    
+
+
 def main():
-    return
+    num = int(input("Escibe un número: "))
+    final = bucle_asterisco(num)
+    print(final)
 
 if __name__ == "__main__":
     main()

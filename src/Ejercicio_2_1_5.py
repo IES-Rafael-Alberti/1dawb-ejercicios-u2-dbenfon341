@@ -3,6 +3,7 @@
 # Escribir un programa que pregunte al usuario su edad y sus ingresos 
 # mensuales y muestre por pantalla si el usuario tiene que tributar o no.
 
+
 def ingreso_suficiente(ingreso):
     if ingreso < 1000:
         return False

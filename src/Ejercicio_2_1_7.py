@@ -21,13 +21,12 @@ def tipo_de_renta(renta):
         return "30"
     else:
         return "45"
-    
+
 
 def main():
     renta_anual = int(input("Introduzca su renta anual: "))
     total = tipo_de_renta(renta_anual)
     print (f"Su renta anual es de {total}%.")
-
 
 
 if __name__ == "__main__":
