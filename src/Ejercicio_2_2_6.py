@@ -15,7 +15,6 @@ def bucle_asterisco(num):
     return resultado
     
 
-
 def main():
     num = int(input("Escibe un número: "))
     final = bucle_asterisco(num)
