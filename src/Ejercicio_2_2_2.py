@@ -6,7 +6,7 @@ def bucle_edad(edad):
     mensaje = ""
     año = 1
     while año <= edad:
-        mensaje = mensaje + (f"{año}\n")
+        mensaje = mensaje + (f"{año} ")
         año = año + 1
     return mensaje
 

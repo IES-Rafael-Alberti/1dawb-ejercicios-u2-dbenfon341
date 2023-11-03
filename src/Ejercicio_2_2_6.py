@@ -12,8 +12,7 @@ def bucle_asterisco(num):
     resultado = ""
     for i in range(1, num + 1):
         resultado = resultado + '\n' + '*' * i
-    return resultado
-    
+    return resultado 
 
 def main():
     num = int(input("Escibe un número: "))
