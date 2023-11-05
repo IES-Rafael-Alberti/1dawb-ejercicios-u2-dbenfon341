@@ -5,8 +5,7 @@
 def comprobar_pwd(pwd):
     while pwd != "contraseña":
         pwd = input("Inténtalo de nuevo: ")
-    else:
-        return "¡Has acertado!"
+    return "¡Has acertado!"
 
 
 def main():

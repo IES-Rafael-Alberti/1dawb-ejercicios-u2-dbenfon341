@@ -4,9 +4,9 @@
 
 def bucle_numero(numero):
     mensaje = ""
-    cont = 1
-    while cont <= numero:
-        mensaje = mensaje + (f"{cont}, ")
+    cont = numero
+    while cont >= 0:
+        mensaje = mensaje + str(cont) + ","
         cont = cont - 1
     return mensaje
 

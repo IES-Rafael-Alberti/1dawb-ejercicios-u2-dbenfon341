@@ -6,7 +6,7 @@ def bucle_palabra(palabra):
     resultado = ""
     cont = 0
     while cont < 10:
-        resultado = (resultado + palabra) + " \n"
+        resultado = (resultado + palabra) + "."
         cont = cont + 1
     return resultado
 

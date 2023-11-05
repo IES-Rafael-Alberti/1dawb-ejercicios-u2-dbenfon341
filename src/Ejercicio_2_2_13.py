@@ -15,5 +15,6 @@ def main():
     final = palabras(introducePalabra)
     print (final)
 
+
 if __name__ == "__main__":
     main()
