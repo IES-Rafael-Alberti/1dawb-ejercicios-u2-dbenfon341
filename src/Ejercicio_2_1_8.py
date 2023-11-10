@@ -1,0 +1,46 @@
+# Ejercicio 2.1.8
+# En una determinada empresa, sus empleados son evaluados al final de cada año. 
+# Los puntos que pueden obtener en la evaluación comienzan en 0.0 y pueden ir aumentando, traduciéndose en mejores beneficios. 
+# Los puntos que pueden conseguir los empleados pueden ser 0.0, 0.4, 0.6 o más, pero no valores intermedios entre las cifras mencionadas.
+# A continuación se muestra una tabla con los niveles correspondientes a cada puntuación. 
+# La cantidad de dinero conseguida en cada nivel es de 2.400€ multiplicada por la puntuación del nivel.
+#
+# Nivel	Puntuación
+# Inaceptable	0.0
+# Aceptable	0.4
+# Meritorio	0.6 o más
+#
+# Escribir un programa que lea la puntuación del usuario e indique su nivel de rendimiento, así como la cantidad de dinero que recibirá el usuario.
+
+
+def pedir_punto(punto):
+    if punto == 0.0 or punto == 0.4 or punto >= 0.6:
+        if punto == 0.0:
+            return "Inaceptable"
+        elif punto == 0.4:
+            return "Aceptable"
+        elif punto >= 0.6:
+            return "Meritorio"
+    else:
+        return False
+
+
+def main():
+    dinerousuario = float(input("Introduce la puntuación del usuario: "))
+    variablepunto = pedir_punto(dinerousuario)
+
+    if variablepunto == "Inaceptable":
+        dinerousuario = dinerousuario * 2400
+        print (f"El nivel del usuario es {variablepunto} y la cantidad de dinero recibida es de: {dinerousuario} €")
+    elif variablepunto == "Aceptable":
+        dinerousuario = dinerousuario * 2400
+        print (f"El nivel del usuario es {variablepunto} y la cantidad de dinero recibida es de: {dinerousuario} €")
+    elif variablepunto == "Meritorio":
+        dinerousuario = dinerousuario * 2400
+        print (f"El nivel del usuario es {variablepunto} y la cantidad de dinero recibida es de: {dinerousuario} €")
+    else:
+        print("Puntuación incorrecta.")
+
+
+if __name__ == "__main__":
+    main()
